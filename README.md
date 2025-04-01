@@ -47,7 +47,7 @@ Intermediate
 6. After creating the database click on "Connect" button and you will see the connection string which you will use in your project.
 
 ### Screenshots
-![ss1](./app/screenshots/1.PNG), ![ss2](./app/screenshots/2.PNG), ![ss3](./app/screenshots/3.PNG), ![ss4](./app/screenshots/4.PNG), ![ss5](./app/screenshots/5.PNG)
+![ss1](./app/screenshots/1.PNG), ![ss2](./app/screenshots/2.PNG), ![ss3](./app/screenshots/3.PNG), ![ss4](./app/screenshots/4.PNG)
 
 4. Go to app/database/database.py file and replace the "NEON_POSTGRES_URL" variable with your own Neon PostgreSQL connection string.
    
@@ -80,8 +80,8 @@ DELETE   /users/{user_id}   Delete a user by ID  -
    Key: x-api-key  
    Value: api123api
 
-### Screenshots
-![ss1](./screenshots/1.PNG), ![ss2](./screenshots/2.png), ![ss3](./screenshots/3.png), ![ss4](./screenshots/4.png), ![ss5](./screenshots/5.png)
+### Postman Screenshots
+![ss1](./app/screenshots/5.PNG), ![ss2](./app/screenshots/6.PNG), ![ss3](./app/screenshots/7.PNG), ![ss4](./app/screenshots/8.PNG), ![ss5](./app/screenshots/9.PNG)
 
 ## Project Structure
 ```
