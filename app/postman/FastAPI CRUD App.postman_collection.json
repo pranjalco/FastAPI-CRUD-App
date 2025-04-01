@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "16485892-8784-452a-b3be-e3238829299c",
+		"name": "FastAPI CRUD App",
+		"description": "**FastAPI CRUD App** – This Postman collection allows you to perform CRUD operations (Create, Read, Update, Delete) on user resources using FastAPI. Easily test API endpoints with GET, POST, PUT, and DELETE requests.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42464877"
+	},
+	"item": [
+		{
+			"name": "add_new_user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x_api_key",
+						"value": "api123api",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Sanya\",\r\n    \"email\": \"sanya@gmail.com\",\r\n    \"password\": \"sa4Pass\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/users/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						""
+					]
+				},
+				"description": "This request will add new user to database."
+			},
+			"response": []
+		},
+		{
+			"name": "get_all_data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/users/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						""
+					]
+				},
+				"description": "This request will give all users data present in database."
+			},
+			"response": []
+		},
+		{
+			"name": "get_one_user_data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/users/4",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"4"
+					]
+				},
+				"description": "This request retrieves user data for the user with **user_id = 4** ."
+			},
+			"response": []
+		},
+		{
+			"name": "delete_user",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x_api_key",
+						"value": "api123api",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/users/5",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"5"
+					]
+				},
+				"description": "This request delete user data for the user with **user_id = 5** ."
+			},
+			"response": []
+		},
+		{
+			"name": "update_user",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x_api_key",
+						"value": "api123api",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"name\": \"Ganu\",\r\n        \"email\": \"g@gmail.com\",\r\n        \"password\": \"asdasa\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/users/4",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"4"
+					]
+				},
+				"description": "This request updates user data for the user with **user_id = 4** ."
+			},
+			"response": []
+		}
+	]
+}
