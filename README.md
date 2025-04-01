@@ -47,7 +47,7 @@ Intermediate
 6. After creating the database click on "Connect" button and you will see the connection string which you will use in your project.
 
 ### Screenshots
-![ss1](./screenshots/1.PNG), ![ss2](./screenshots/2.png), ![ss3](./screenshots/3.png), ![ss4](./screenshots/4.png), ![ss5](./screenshots/5.png)
+![ss1](./app/screenshots/1.PNG), ![ss2](./screenshots/2.png), ![ss3](./screenshots/3.png), ![ss4](./screenshots/4.png), ![ss5](./screenshots/5.png)
 
 4. Go to app/database/database.py file and replace the "NEON_POSTGRES_URL" variable with your own Neon PostgreSQL connection string.
    
