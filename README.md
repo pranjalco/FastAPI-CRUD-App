@@ -29,10 +29,10 @@ Intermediate
 ## How to Run
 1. Clone the repo:  
    ```bash  
-   git clone https://github.com/pranjalco/flask-coffee-and-wifi.git
+   git clone https://github.com/pranjalco/FastAPI-CRUD-App.git
    ```
    ```
-   cd repo-name
+   cd FastAPI-CRUD-App
    ```
 2. Open project in PyCharm - open terminal - install required libraries
 
@@ -50,7 +50,9 @@ Intermediate
 ![ss1](./screenshots/1.PNG), ![ss2](./screenshots/2.png), ![ss3](./screenshots/3.png), ![ss4](./screenshots/4.png), ![ss5](./screenshots/5.png)
 
 4. Go to app/database/database.py file and replace the "NEON_POSTGRES_URL" variable with your own Neon PostgreSQL connection string.
-   Your string will be like this: "postgresql://user:password@hostname/dbname?sslmode=require" so from this string remove "postgresql://" and use remaining Neon PostgreSQL connection string to replace "NEON_POSTGRES_URL" variable.
+   
+   Your string will be like this: "postgresql://user:password@hostname/dbname?sslmode=require" 
+   so from this string remove "postgresql://" and use remaining Neon PostgreSQL connection string to replace "NEON_POSTGRES_URL" variable.
 
 8. Run the code in the terminal:
    ```bash  
@@ -62,7 +64,7 @@ Intermediate
    Redoc: Visit http://localhost:8000/redoc.
 
 ## Endpoints
-
+```
 Method   Endpoint           Description              Request Body Example
                                                                                    
 POST     /users             Create a new user    -   { "name": "John", "email": "john@example.com", "password": "secret" }
@@ -70,7 +72,7 @@ GET      /users             Get all users        -
 GET      /users/{user_id}   Get a user by ID     - 
 PUT      /users/{user_id}   Update a user by ID  -   { "name": "John", "email": "john@example.com", "password": "secret" }
 DELETE   /users/{user_id}   Delete a user by ID  - 
-
+```
 ## Testing with Postman
 
 - You can find the Postman collection for this API [./app/postman/FastAPI CRUD App.postman_collection]
@@ -82,7 +84,7 @@ DELETE   /users/{user_id}   Delete a user by ID  -
 ![ss1](./screenshots/1.PNG), ![ss2](./screenshots/2.png), ![ss3](./screenshots/3.png), ![ss4](./screenshots/4.png), ![ss5](./screenshots/5.png)
 
 ## Project Structure
-
+```
 /
 ├── app/
 │   ├── models/                                       # SQLModel database models
@@ -98,7 +100,7 @@ DELETE   /users/{user_id}   Delete a user by ID  -
 │   └── main.py                                       # FastAPI app initialization
 ├── requirements.txt                                  # Dependencies
 └── README.md                                         # You are here!
-
+```
 
 **Created by Pranjal Sarnaik**  
 *Released under the MIT License*
